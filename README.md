@@ -1,6 +1,6 @@
-##NiceTask docker-compose configuration.
+## NiceTask docker-compose configuration.
 
-###Runbook:
+### Runbook:
 
 1) clone all 4 repositories in one directory
 2) go to *mc1*, *mc2* and *mc3* and run `mvn clean package -DskipTests` in each project
@@ -9,7 +9,7 @@
 5) Access `http://localhost:8081/mc1/start` to start execution
 6) Access `http://localhost:8081/mc1/stop` to stop execution
 
-###Important!
+### Important!
 I've set some conditions between services to start, but 
 sometimes startup order can differ on different machines.
 In case of such issue, this is the right order to start services:
